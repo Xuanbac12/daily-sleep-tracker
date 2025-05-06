@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #edf4fe;
+  overflow-x: hidden; /* ✅ thêm dòng này */
+}
+
+
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  padding-top: 100px; /* ✅ thay vì margin-top */
+  min-height: 100vh;
+  
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 40px;
+  padding: 1.5rem;
+  gap: 2rem;
+}
+
+.title {
+  font-size: clamp(1.4rem, 3vw, 2rem);  font-weight: bolder;
+  text-align: center;
+  color: black;
+}
+
+.add-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.new-btn1 {
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  background-color: #5795fa;
+  color: #ffffff;
+  text-transform: uppercase;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Bố cục dọc cho Chart, Bảng, Phân tích */
+.statistics {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.duration,
+.stats {
+  width: 100%;
+}
+
+.sleep-analysis {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 16px;
+  background-color: #eaf2ff;
+  font-size: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .new-btn1 {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+  }
+
+  .sleep-analysis {
+    font-size: 14px;
+    padding: 1rem;
+  }
+  /* ✅ Thêm vào Home.css */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;  /* Cho phép cuộn ngang nếu bảng quá rộng */
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+}
+
+}
+/* 🔷 Bọc phần chọn tháng + tuần + nút mới */
+.header-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* 🔷 Tuỳ chỉnh DatePicker và Select */
+.filters .MuiFormControl-root {
+  min-width: 150px;
+  font-size: 0.95rem;
+}
+
+.filters select {
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+/* 🔷 Làm nổi nút New Entry */
+.new-btn1 {
+  border-radius: 30px;
+  padding: 10px 24px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  background: linear-gradient(to right, #4a90e2, #5795fa);
+  color: #ffffff;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.new-btn1:hover {
+  background: linear-gradient(to right, #3c7dcf, #4a90e2);
+}
