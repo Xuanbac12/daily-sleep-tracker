@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 💤 Daily Sleep Tracker
 
 > Ứng dụng giúp người dùng **ghi lại** và **phân tích thói quen giấc ngủ** một cách trực quan, bao gồm hệ thống backend bằng Spring Boot và frontend bằng ReactJS.
@@ -175,7 +175,7 @@ npm start
 
 ---
 
-<<<<<<< HEAD
+
 ## 🔐 Bảo mật & JWT
 
 - Người dùng đăng nhập nhận JWT token
@@ -249,7 +249,7 @@ Dự án được phát hành theo giấy phép **MIT License**.
 
 ## 👤 Tác giả
 
-<<<<<<< HEAD
+
 - GitHub: [@Xuanbac12](https://github.com/Xuanbac12)
 - Dự án phát triển phục vụ học tập và nâng cao kỹ năng lập trình Fullstack.
 
